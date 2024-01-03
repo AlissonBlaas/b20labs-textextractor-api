@@ -8,7 +8,7 @@
   ],
   "routes": [
     {
-      "src": "/extract-text",
+      "src": "api/extract-text",
       "dest": "api/index.py"
     }
   ]
