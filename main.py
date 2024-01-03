@@ -3,7 +3,6 @@ from flask_cors import CORS
 from text_extractor import PyMuPDFTextExtractor
 from text_generator import OpenAITextGenerator
 from text_processing import TextProcessingService
-from werkzeug.utils import secure_filename
 import os
 from dotenv import load_dotenv
 
