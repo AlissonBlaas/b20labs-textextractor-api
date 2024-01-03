@@ -6,11 +6,14 @@ class TextProcessingService:
         self.text_extractor = text_extractor
         self.text_generator = text_generator
 
-    def process_text(self, file):
-        extraction_result = self.text_extractor.extract_text(file)
+    def process_text(self, file_data):
+        extraction_result = self.text_extractor.extract_text(file_data)
         if 'error' in extraction_result:
             return extraction_result
 
-        prompt = f"Given the following PDF text:\n{extraction_result['text']}\nGenerate a relevant text:"
+        extracted_text = extraction_result.get('text', '')
+
+        prompt = f"Given the following PDF text:\n{extracted_text}\nGenerate a relevant text:"
         generation_result = self.text_generator.generate_text(prompt)
+
         return {'generated_text': generation_result}

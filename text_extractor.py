@@ -5,16 +5,19 @@ class TextExtractor:
         pass
 
 class PyMuPDFTextExtractor(TextExtractor):
-    def extract_text(self, file_path):
-        text = ""
+    def extract_text(self, file_data):
         try:
-            doc = fitz.open(file_path)
+            doc = fitz.open("pdf", file_data)
+
+            text = ''
             for page_number in range(doc.page_count):
                 page = doc[page_number]
                 text += page.get_text()
+
+            return {'text': text}
+
         except Exception as e:
-            return {'error': str(e)}
+            return {'error': f"Error extracting text: {str(e)}"}
         finally:
             if 'doc' in locals():
                 doc.close()
-        return {'text': text}

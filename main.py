@@ -22,14 +22,14 @@ def extract_and_generate_text():
     if file.filename == '':
         return jsonify({'error': 'No selected file'})
 
-    filename = secure_filename(file.filename)
-    file.save(filename)
+    file_data = file.read()
+
 
     text_extractor = PyMuPDFTextExtractor()
     text_generator = OpenAITextGenerator(api_key=os.environ['OPENAI_API_KEY'])
 
     text_processor = TextProcessingService(text_extractor, text_generator)
-    result = text_processor.process_text(filename)
+    result = text_processor.process_text(file_data)
 
     return jsonify(result)
 
