@@ -33,4 +33,4 @@ def extract_and_generate_text():
     return jsonify(result)
 
 if __name__ == '__main__':
-    app.run(port=443, debug=True)
+    app.run(host='0.0.0.0', port=443, debug=True)
