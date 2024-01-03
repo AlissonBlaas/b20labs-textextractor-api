@@ -26,3 +26,10 @@ python main.py to execute locally
 ### Environment Variables
 
 Refer to the .example.env file for environment variables.
+
+## BOTH PROJECTS, [FRONTEND](https://github.com/AlissonBlaas/b2labs-textextractor-web) AND BACKEND ARE UPLODED AT VERCEL
+WEB DEMO: https://b2labs-textextractor-web.vercel.app/
+
+
+![image](https://github.com/AlissonBlaas/b2labs-textextractor-api/assets/32876996/3ccf8c6c-ae21-41d0-a15b-ce5769d30639)
+
