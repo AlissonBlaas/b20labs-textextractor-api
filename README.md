@@ -18,9 +18,9 @@ you will need python installed in your machine
 1. Install dependencies using pip or other package manager.
 
 2. Run the server after installing the dependencies:
-
+ - to execute locally
 ```bash
-python main.py to execute locally
+python api/main.py
 ```
 
 ### Environment Variables
