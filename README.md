@@ -1,4 +1,4 @@
-# B2LABS CODE CHALLENGE API
+# B20LABS CODE CHALLENGE API
 ## Description
 
 The B2LABS API support Web and Mobile Applications.
