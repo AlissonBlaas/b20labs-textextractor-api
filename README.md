@@ -63,11 +63,42 @@ The OpenAI API key and prompt are used to make a request to the OpenAI API using
 The prompt and other relevant parameters are passed to the API, and the response is received.
 ```
 
+TextProcessingService 
+is a high-level module that uses the extracted text and generates additional text.
 
-TextProcessingService is a high-level module that uses the extracted text and generates additional text.
+```
+Initialization:
+
+The class is initialized with instances of TextExtractor and TextGenerator.
+These instances are provided through dependency injection, allowing the class to work with different implementations of text extraction and text generation.
+Process Text Method:
+
+The main method of the class is process_text(file_data).
+It takes the raw content of a PDF document (file_data) as input.
+Text Extraction:
+
+It calls the extract_text method of the injected TextExtractor to extract text from the provided PDF content.
+The result of text extraction is stored in the extraction_result variable.
+```
+
 
 This separation adheres to SRP and DIP, making the code more modular and adherent to SOLID principles. 
 The TextProcessingService can easily switch between different implementations of text extraction and generation without modifying its code, making it more flexible and maintainable.
+
+
+
+## WHERE THIS CAN BE USED
+
+### Use Case: Summarizing legal contracts, agreements, or court documents.
+
+Benefit: Helps legal professionals quickly identify key terms, obligations, and legal implications.
+News Article Summarization:
+
+### Use Case: Summarizing news articles for readers.
+
+Benefit: Provides a brief summary of news stories, enabling users to stay informed without reading every article.
+
+
 
 ## THIS BACKEND ARE DEPLOYED AT RENDER
 ![image](https://github.com/AlissonBlaas/b2labs-textextractor-api/assets/32876996/dda6647d-4f97-4568-88ff-7d9d2857cd80)
