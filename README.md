@@ -1,4 +1,4 @@
-![image](https://github.com/AlissonBlaas/b2labs-textextractor-api/assets/32876996/3a3e30c5-7a67-41ed-a28e-5394aaeb5f52)# B2LABS CODE CHALLENGE API
+# B2LABS CODE CHALLENGE API
 ## Description
 
 The B2LABS API support Web and Mobile Applications.
