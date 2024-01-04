@@ -34,6 +34,7 @@ i try to apply solid to this backend by made some classes and export those class
 - TextExtractor is an interface representing a strategy for extracting text.
 
 - PyMuPDFTextExtractor is a concrete implementation of the text extraction strategy using PyMuPDF.
+### [FILE](https://github.com/AlissonBlaas/b2labs-textextractor-api/blob/main/api/text_extractor.py)
 ```
 ## PyMuPDF Library:
 PyMuPDF is used to open and read the PDF document (fitz.open("pdf", file_data)).
@@ -49,6 +50,7 @@ If an error occurs, it is caught, and an error message is returned in the result
 ```
 
 - OpenAITextGenerator is a concrete implementation of the text generation strategy using OpenAI.
+### [FILE](https://github.com/AlissonBlaas/b2labs-textextractor-api/blob/main/api/text_generator.py)
 ```
 The OpenAITextGenerator class is responsible for interacting with the OpenAI API to generate text based on a given prompt.
 The class is initialized with the OpenAI API key, which is typically kept confidential and should be stored securely.
@@ -64,7 +66,7 @@ The prompt and other relevant parameters are passed to the API, and the response
 ```
 
 - TextProcessingService is a high-level module that uses the extracted text and generates additional text.
-
+### [FILE](https://github.com/AlissonBlaas/b2labs-textextractor-api/blob/main/api/text_processing.py)
 ```
 Initialization:
 
