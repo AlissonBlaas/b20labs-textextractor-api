@@ -30,7 +30,7 @@ Refer to the .example.env file for environment variables.
 ## SOLID
 i try to apply solid to this backend by made some classes and export those classes and their methods
 
-### THE METHODOS THAT I USE
+### THE METHODS THAT I USE
 ### [FILE](https://github.com/AlissonBlaas/b2labs-textextractor-api/blob/main/api/text_extractor.py) contains TextExtractor
 - TextExtractor is an interface representing a strategy for extracting text.
 
