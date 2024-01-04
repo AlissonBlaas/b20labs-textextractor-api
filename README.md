@@ -34,8 +34,35 @@ i try to apply solid to this backend by made some classes and export those class
 TextExtractor is an interface representing a strategy for extracting text.
 
 PyMuPDFTextExtractor is a concrete implementation of the text extraction strategy using PyMuPDF.
+```
+## PyMuPDF Library:
+PyMuPDF is used to open and read the PDF document (fitz.open("pdf", file_data)).
+The document is processed page by page using a loop (for page_number in range(doc.page_count):).
+
+## Text Extraction:
+For each page in the PDF, the text content is extracted using page.get_text().
+The extracted text from each page is concatenated to form the complete text content of the PDF.
+
+## Error Handling:
+Exception handling is implemented to capture any errors that may occur during the text extraction process.
+If an error occurs, it is caught, and an error message is returned in the result dictionary ({'error': f"Error extracting text: {str(e)}"}).
+```
 
 OpenAITextGenerator is a concrete implementation of the text generation strategy using OpenAI.
+```
+The OpenAITextGenerator class is responsible for interacting with the OpenAI API to generate text based on a given prompt.
+The class is initialized with the OpenAI API key, which is typically kept confidential and should be stored securely.
+
+## Generation Method:
+The generate_text method of the OpenAITextGenerator class takes a prompt as input.
+The prompt is constructed using the extracted text from the PDF content in the TextProcessingService class.
+In the provided example, the prompt is constructed with the message "Given the following PDF text:\n{extracted_text}\nGenerate a relevant text:".
+
+## API Request:
+The OpenAI API key and prompt are used to make a request to the OpenAI API using the openai.Completion.create method.
+The prompt and other relevant parameters are passed to the API, and the response is received.
+```
+
 
 TextProcessingService is a high-level module that uses the extracted text and generates additional text.
 
