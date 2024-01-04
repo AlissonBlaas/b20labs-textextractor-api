@@ -3,6 +3,8 @@
 
 The B2LABS API support Web and Mobile Applications.
 
+WEB DEMO: https://b2labs-textextractor-web.vercel.app/
+
 ## Code Standards
 
 ## Setup
@@ -108,6 +110,4 @@ Benefit: Provides a brief summary of news stories, enabling users to stay inform
 ![image](https://github.com/AlissonBlaas/b2labs-textextractor-api/assets/32876996/dda6647d-4f97-4568-88ff-7d9d2857cd80)
   
 [FRONTEND](https://github.com/AlissonBlaas/b2labs-textextractor-web) ARE DEPLOYED AT VERCEL
-
-WEB DEMO: https://b2labs-textextractor-web.vercel.app/
 
