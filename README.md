@@ -1,4 +1,4 @@
-# B2LABS CODE CHALLENGE API
+![image](https://github.com/AlissonBlaas/b2labs-textextractor-api/assets/32876996/3a3e30c5-7a67-41ed-a28e-5394aaeb5f52)# B2LABS CODE CHALLENGE API
 ## Description
 
 The B2LABS API support Web and Mobile Applications.
@@ -27,9 +27,25 @@ python main.py to execute locally
 
 Refer to the .example.env file for environment variables.
 
-## BOTH PROJECTS, [FRONTEND](https://github.com/AlissonBlaas/b2labs-textextractor-web) AND BACKEND ARE UPLODED AT VERCEL
+## SOLID
+i try to apply solid to this backend by made some classes and export those classes and their methods
+
+### THE METHODOS THAT I USE
+TextExtractor is an interface representing a strategy for extracting text.
+
+PyMuPDFTextExtractor is a concrete implementation of the text extraction strategy using PyMuPDF.
+
+OpenAITextGenerator is a concrete implementation of the text generation strategy using OpenAI.
+
+TextProcessingService is a high-level module that uses the extracted text and generates additional text.
+
+This separation adheres to SRP and DIP, making the code more modular and adherent to SOLID principles. 
+The TextProcessingService can easily switch between different implementations of text extraction and generation without modifying its code, making it more flexible and maintainable.
+
+## THIS BACKEND ARE DEPLOYED AT RENDER
+![image](https://github.com/AlissonBlaas/b2labs-textextractor-api/assets/32876996/dda6647d-4f97-4568-88ff-7d9d2857cd80)
+  
+[FRONTEND](https://github.com/AlissonBlaas/b2labs-textextractor-web) ARE DEPLOYED AT VERCEL
+
 WEB DEMO: https://b2labs-textextractor-web.vercel.app/
-
-
-![image](https://github.com/AlissonBlaas/b2labs-textextractor-api/assets/32876996/3ccf8c6c-ae21-41d0-a15b-ce5769d30639)
 
