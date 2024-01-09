@@ -1,4 +1,8 @@
 # B20LABS CODE CHALLENGE API
+
+i need to change davinci model for a new one, because it's deprecated now
+https://platform.openai.com/docs/deprecations
+
 ## Description
 
 The B2LABS API support Web and Mobile Applications.
