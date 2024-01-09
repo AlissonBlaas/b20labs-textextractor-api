@@ -12,7 +12,7 @@ class OpenAITextGenerator(TextGenerator):
     def generate_text(self, prompt):
         try:
             response = openai.completions.create(
-                model="text-davinci-003",
+                model="gpt-3.5-turbo-instruct",
                 prompt=prompt,
                 max_tokens=200,
             )
